@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -16,8 +15,7 @@ body {
   cursor: pointer;
 }
 
-.note-textarea,
-.note-title {
+.note-textarea, .note-title {
   color: #000000;
   width: 100%;
   outline: none;
@@ -36,8 +34,7 @@ body {
   font-size: 3rem;
 }
 
-.note-title:read-only,
-.note-textarea:read-only {
+.note-title:read-only, .note-textarea:read-only {
   color: #757575;
 }
 
@@ -60,11 +57,6 @@ body {
   border-top-left-radius: 0;
 }
 
-.list-item-title {
-  display: inline-block;
-  width: 75%;
-}
-
 .list-container i {
   font-size: 1.1rem;
   cursor: pointer;
@@ -76,3 +68,4 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+

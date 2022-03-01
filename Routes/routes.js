@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const express = require("express");
+const app = express();
 
 module.exports = app => {
 
@@ -17,7 +19,7 @@ module.exports = app => {
     })
 };
 
-app.post("/api/notes", function (req, res) {
+app.post("/api/userNotes", function (req, res) {
 
     let addedNote = req.body;
     userNotes.push(addedNote);
@@ -25,22 +27,22 @@ app.post("/api/notes", function (req, res) {
     return console.log("Added new note: " + addedNote.title);
 });
 
-app.get("/api/notes/:id", function (req, res) {
+app.get("/api/userNotes/:id", function (req, res) {
 
     res.json(userNotes[req.params.id]);
 });
 
-app.delete("/api/notes/:id", function (req, res) {
+app.delete("/api/userNotes/:id", function (req, res) {
     userNotes.splice(req.params.id, 1);
     updateDb();
     console.log("Deleted note with id " + req.params.id);
 });
-        app.get('/notes', function(req,res) {
+        app.get('/userNotes', function(req,res) {
             res.sendFile(path.join(__dirname, "../public/notes.html"));
         });
         
         app.get('*', function(req,res) {
-            res.sendFile(path.join(__dirname, "../public/index.html"));
+            res.sendFile(path.join(__dirname, "../Develop/index.html"));
         });
 
         function updateDb() {
