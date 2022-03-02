@@ -11,4 +11,5 @@ Deployed Page: https://kiahnac.github.io/NoteTaker/
 
 
 
-https://github.com/KiahnaC/NoteTaker/issues/1#issue-1156845112
+<img width="1440" alt="Screen Shot 2022-03-02 at 12 54 52 AM" src="https://user-images.githubusercontent.com/88855915/156330162-4d38d684-60db-4c5e-8c58-c0b1ca585545.png">
+
