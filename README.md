@@ -9,3 +9,6 @@ THEN once title and notes are completed, the user can save the notes to the left
 Github: https://github.com/KiahnaC/NoteTaker
 Deployed Page: https://kiahnac.github.io/NoteTaker/
 
+
+
+https://github.com/KiahnaC/NoteTaker/issues/1#issue-1156845112
