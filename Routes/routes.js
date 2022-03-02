@@ -42,11 +42,11 @@ app.delete("/api/notes/:id", function (req, res) {
         });
         
         app.get('*', function(req,res) {
-            res.sendFile(path.join(__dirname, "../Develop/index.html"));
+            res.sendFile(path.join(__dirname, "../public/index.html"));
         });
 
         function updateDb() {
-            fs.writeFile("db/db.json",JSON.stringify(userNotes,'\t'),err => {
+            fs.writeFile("db/db.json",JSON.stringify(notes,'\t'),err => {
                 if (err) throw err;
                 return true;
             });
